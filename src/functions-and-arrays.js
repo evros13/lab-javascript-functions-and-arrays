@@ -1,32 +1,118 @@
 // Iteration #1: Find the maximum
-function maxOfTwoNumbers() {}
+function maxOfTwoNumbers(number1, number2) {
+  if (number1 > number2) {
+    return number1
+  }
+  else if (number1 < number2) {
+    return number2
+  }
+  else if (number1 = number2) {
+    return number1 || number2
+  }
+}
 
 
 
 // Iteration #2: Find longest word
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 
-function findLongestWord() {}
+function findLongestWord(array) {
+  if (array == "") {
+    return null
+  }
+
+  else if (array[1] == undefined) {
+    return array[0]
+  }
+ 
+    let wordLength = 0
+    let longestWord;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].length > wordLength) {
+      wordLength = array[i].length;
+      longestWord = array[i];
+      return longestWord
+    }
+  
+  
+  }
+}
 
 
 
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-function sumNumbers() {}
+function sumNumbers(array) {
+  if (array[0] == undefined) {
+    
+    return 0;
+  }
+
+  else if (array.length <= 1){
+   
+    return array[0];
+  }
+
+
+  else if (array.length > 1) {
+   
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    sum += array[i];
+    console.log(sum);
+  }
+  return sum;
+}
+
+
+
+}
 
 
 
 // Iteration #3.1 Bonus:
-function sum() {}
+function sum(array){
+  if (array.length == 0) {
+    return 0;
+  }
 
 
 
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    sum += array[i];
+    console.log(sum);
+  }
+  return sum;
+
+
+
+  // let sumString = 0;
+  // for (let i = 0; i < array[i][i].length; i++) {
+  //   sumString += array[i][i];
+
+  // }
+  // return sumString;
+}
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers() {}
+function averageNumbers(array) {
+  // let sum = 0;
+  // for (let i = 0; i < array[i][i].length; i++) {
+  //   sum += array[i][i];
+  // }
+  // let average = sum / array[i];
+  // return average;
+
+  const sum = myArray.reduce((a, b) => a + b, 0);
+
+  const average = (sum / myArray.length) || 0;
+  
+
+}
 
 
 // Level 2: Array of strings
