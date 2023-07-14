@@ -95,21 +95,27 @@ function sum(array){
   // }
   // return sumString;
 }
+
+
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
 function averageNumbers(array) {
-  // let sum = 0;
-  // for (let i = 0; i < array[i][i].length; i++) {
-  //   sum += array[i][i];
-  // }
-  // let average = sum / array[i];
-  // return average;
+  let totalSum = 0;
+  for (let i = 0; i < array.length; i++) {
+    totalSum += array[i];
+  }
+  return totalSum;
 
-  const sum = myArray.reduce((a, b) => a + b, 0);
+let sumAverage = totalSum / array.length;
 
-  const average = (sum / myArray.length) || 0;
+return sumAverage;
+
+
+  // const sum = myArray.reduce((a, b) => a + b, 0);
+
+  // const average = (sum / myArray.length) || 0;
   
 
 }
